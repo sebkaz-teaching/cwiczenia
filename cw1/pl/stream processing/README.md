@@ -1,4 +1,4 @@
-**Apache Kafka - Wprowadzenie**
+# Apache Kafka - Wprowadzenie
 
 Apache Kafka to system przetwarzania strumieniowego (event streaming), który działa jako rozproszony broker wiadomości. 
 Pozwala na przesyłanie i przetwarzanie danych w czasie rzeczywistym.
@@ -9,7 +9,7 @@ W Apache Kafka dane są przechowywane w strukturach zwanych **topicami**, które
 
 Zarządzanie Kafką odbywa się za pomocą skryptów. W naszym przypadku będą to skrypty `.sh`.
 
-### 1️⃣ Sprawdź listę topiców
+## 1️⃣ Sprawdź listę topiców
 Pamiętaj, aby przejść do katalogu domowego:
 ```sh
 cd ~
@@ -62,7 +62,7 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 test_ke
 
 ### 5️⃣ Przetestuj przesyłanie danych
 W terminalu z uruchomionym producentem wpisz tekst w postaci:
-```
+```bash
 jan:45
 alicja:20
 ```
