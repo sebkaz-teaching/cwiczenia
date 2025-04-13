@@ -13,7 +13,6 @@ df = (spark.readStream.format("kafka")
       .option("startingOffsets", "earliest")
       .load()
      )
-# to co trafia z kafki przychodzi w postaci binarnej więc trzeba przetworzyć to na string
 
 (df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
  .writeStream
